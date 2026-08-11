@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Ana Cristina Brito</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img id="logo_iniciais" src="assets/logo/logo_ana_cristina.png" alt="Logo Ana Cristina">
+
+        <nav class="menu-navegacao" aria-label="Navegação Principal">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre-mim">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li>
+                    <div class="seletor-idioma" aria-label="Seletor de Idioma">
+                        <a href="#" class="lang active" aria-current="page">PT</a>
+                        <span class="divisor" aria-hidden="true">/</span>
+                        <a href="#" class="lang">EN</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="home" aria-label="Apresentação">
+            <div class="bola-decorativa bola-topo-centro" aria-hidden="true"></div>
+            <div class="bola-decorativa bola-direita" aria-hidden="true"></div>
+            <div class="bola-decorativa bola-canto-inferior-esquerdo" aria-hidden="true"></div>
+            <div class="bola-decorativa bola-canto-inferior-direito" aria-hidden="true"></div>
+
+            <div class="home-conteudo">
+
+                <div class="home-foto">
+                    <img id="imagem-inicio" src="assets/minhas_fotos/ana_cristina_1.png"
+                        alt="Foto de perfil de Ana Cristina Brito">
+                </div>
+
+                <div class="home-texto">
+                    <p class="h2">OLÁ, SOU A ANA.</p>
+                    <h1 class="h1">Estudante de Sistemas <br>para Internet</h1>
+
+                    <a href="#projetos" class="botao-inicio">Ver Projetos &rarr;</a>
+
+                    <p class="paragrafo-inicio">
+                        Construindo experiências web modernas enquanto aprendo e evoluo constantemente no universo da
+                        tecnologia.
+                    </p>
+
+                    <nav class="redes-sociais-nav" aria-label="Redes Sociais">
+                        <ul class="redes-sociais">
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li>/</li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li>/</li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li>/</li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">E-mail</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="sobre-mim" aria-labelledby="sobre">
+
+            <div id="blocoTexto-sobre">
+                <h2 id="titulo-sobreMim">Sobre Mim</h2>
+                <p class="paragrafo-sobreMim">Sou Ana Cristina Brito de Miranda, estudante de <strong
+                        id="sistemas-internet">Sistemas para
+                        Internet</strong> na UEG e estou construindo minha
+                    carreira na área de tecnologia. Atualmente, desenvolvo meus conhecimentos em programação,
+                    desenvolvimento web e banco de dados, enquanto exploro diferentes áreas para descobrir minha
+                    especialização.
+                </p>
+                <p class="paragrafo-sobreMim">Além da tecnologia, atuo como professora de inglês, experiência que
+                    fortaleceu habilidades como
+                    comunicação, organização e pensamento analítico, competências que levo para todos os meus projetos.
+                </p>
+            </div>
+            <div id="blocoImagem-sobre">
+                <img id="imagem-sobreMim" src="assets/minhas_fotos/ana_cristina_2.png" alt="foto Ana Cristina Brito">
+                <h3 id="nome-sobreMim">Ana Cristina Brito</h3>
+            </div>
+
+        </section>
+
+        <section id="habilidades" aria-labelledby="titulo-habilidades" >
+
+            <h2 id="titulo-habilidades">Habilidades</h2>
+
+            <ul id="cards-desfoque" class="container-cards" >
+
+                <!--Cards com os nomes das tecnologias-->
+
+                <li id="card-html" class="card-habilidades">
+                    <img src="assets/icons/html5.svg" alt="HTML5" class="card-image">
+                    <p class="card-title">html</p>
+                </li>
+
+                <li id="card-css" class="card-habilidades">
+                    <img src="assets/icons/css3.svg" alt="CSS3" class="card-image">
+                    <p class="card-title">CSS</p>
+                </li>
+
+                <li id="card-javascript" class="card-habilidades">
+                    <img src="assets/icons/javascript.svg" alt="JavaScript" class="card-image">
+                    <p class="card-title">JavaScript</p>
+                </li>
+
+                <li id="card-python" class="card-habilidades">
+                    <img src="assets/icons/python.svg" alt="Python" class="card-image">
+                    <p class="card-title">Python</p>
+                </li>
+
+                <li id="card-cplusplus" class="card-habilidades">
+                    <img src="assets/icons/cplusplus.svg" alt="C++" class="card-image">
+                    <p class="card-title">C++</p>
+                </li>
+
+                <li id="card-sql" class="card-habilidades">
+                    <img src="assets/icons/sql.svg" alt="SQL" class="card-image">
+                    <p class="card-title">SQL</p>
+                </li>
+
+                <li id="card-nodejs" class="card-habilidades">
+                    <img src="assets/icons/nodejs.svg" alt="Node.js" class="card-image">
+                    <p class="card-title">Node.Js</p>
+                </li>
+
+                <li id="card-streamlit" class="card-habilidades">
+                    <img src="assets/icons/streamlit.svg" alt="Streamlit" class="card-image">
+                    <p class="card-title">Streamlit</p>
+                </li>
+
+                <li id="card-boostrap" class="card-habilidades">
+                    <img src="assets/icons/bootstrap.svg" alt="Bootstrap" class="card-image">
+                    <p class="card-title">Booststrap</p>
+                </li>
+
+                <li id="card-git" class="card-habilidades">
+                    <img src="assets/icons/git.svg" alt="Git" class="card-image">
+                    <p class="card-title">Git</p>
+                </li>
+
+                <li id="card-github" class="card-habilidades">
+                    <img src="assets/icons/github.svg" alt="GitHub" class="card-image">
+                    <p class="card-title">GitHub</p>
+                </li>
+
+                <li id="card-figma" class="card-habilidades">
+                    <img src="assets/icons/figma.svg" alt="Figma" class="card-image">
+                    <p class="card-title">Figma</p>
+                </li>
+
+                <li id="card-canva" class="card-habilidades">
+                    <img src="assets/icons/canva.svg" alt="Canva" class="card-image">
+                    <p class="card-title">Canva</p>
+                </li>
+
+                <!--Cards com cadeado-->
+
+                <li class="card-embreve card-habilidades">
+                    <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" class="card-image">
+                    <p class="card-title">Em Breve...</p>
+                </li>
+
+                <li class="card-embreve card-habilidades">
+                    <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" class="card-image">
+                    <p class="card-title">Em Breve...</p>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    
+
+</body>
+<script src="script.js"></script>
+</html>
