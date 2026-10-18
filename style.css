@@ -294,7 +294,7 @@ ul {
 
 .redes-sociais a {
     color: var(--cor-primaria-roxo);
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 600;
     transition: color 0.4s ease;
 }
