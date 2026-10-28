@@ -609,25 +609,38 @@ ul {
     color: var(--cor-link-roxo-claro);
 }
 
-.botao-whatsapp {
-    align-self: flex-start;
-    display: inline-block;
-    padding: 10px 24px;
-    border-radius: 25px;
-    background-color: var(--cor-transparente-botoes); /* #342f70 */
-    color: var(--cor-texto-branco);
-    font-family: var(--fonte-principal);
-    font-size: 0.95rem;
-    font-style: italic;
-    font-weight: 500;
+.botao-github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 20px;
+
+    background-color: #6c4ab6;
+    color: #ffffff;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
     text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+
+    border: 1px solid #6c4ab6;
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
 }
 
-.botao-whatsapp:hover {
+.botao-github:hover {
+    background-color: #573796;
+    border-color: #573796;
     transform: translateY(-2px);
-    background-color: var(--cor-primaria-roxo);
-    opacity: 0.9;
+}
+
+.botao-github:focus-visible {
+    outline: 3px solid #b9a0ed;
+    outline-offset: 3px;
 }
 
 .formulario-contato {
