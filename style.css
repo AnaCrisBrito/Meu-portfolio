@@ -695,6 +695,36 @@ ul {
     transform: translateY(-2px);
 }
 
+/* Mensagem de retorno do formulário */
+
+.mensagem-status {
+    display: none;
+    margin-top: 15px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.mensagem-status.sucesso {
+    display: block;
+    color: #176b3a;
+    background-color: #e8f7ed;
+    border: 1px solid #b7e4c7;
+}
+
+.mensagem-status.erro {
+    display: block;
+    color: #a12626;
+    background-color: #fdecec;
+    border: 1px solid #f5bcbc;
+}
+
+#botao:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
 /* RODAPÉ */
 
 .rodape {
