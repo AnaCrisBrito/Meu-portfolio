@@ -1,67 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Ana Cristina Brito, estudante de Sistemas para Internet. Projetos, habilidades e contato.">
+    <meta name="theme-color" content="#000011">
 
-    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
-    </script>
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap">
     <link rel="stylesheet" href="style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+    <script defer src="script.js"></script>
 
     <title>Portfólio - Ana Cristina Brito</title>
 </head>
 
 <body>
 
+    <a class="pular-conteudo" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
     <!-- CABEÇALHO -->
     <header class="cabecalho">
 
-        <a href="#home" class="logo-link" aria-label="Ir para o início">
-            <img class="logo" src="assets/logo/logo_ana_cristina.png" alt="Logo Ana Cristina">
+        <a href="#home" class="logo-link" aria-label="Ir para o início" data-i18n-attr="aria-label:logo.link">
+            <img class="logo" src="assets/logo/logo_ana_cristina.png" alt="Logo Ana Cristina" width="40" height="40">
         </a>
 
-        <nav class="menu-navegacao" aria-label="Navegação principal">
-            <ul>
+        <div class="cabecalho-acoes">
 
-                <li>
-                    <a href="#home" class="link-navegacao">Início</a>
-                </li>
+            <nav class="menu-navegacao" id="menu-navegacao" aria-label="Navegação principal"
+                data-i18n-attr="aria-label:nav.label">
+                <ul>
+                    <li><a href="#home" class="link-navegacao" data-i18n="nav.home">Início</a></li>
+                    <li><a href="#sobre-mim" class="link-navegacao" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="#habilidades" class="link-navegacao" data-i18n="nav.skills">Habilidades</a></li>
+                    <li><a href="#secao-projetos" class="link-navegacao" data-i18n="nav.projects">Projetos</a></li>
+                    <li><a href="#contato" class="link-navegacao" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
 
-                <li>
-                    <a href="#sobre-mim" class="link-navegacao">Sobre</a>
-                </li>
+            <div class="seletor-idioma" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+                <button type="button" class="idioma ativo" data-idioma="pt" lang="pt" aria-pressed="true"
+                    aria-label="Português">PT</button>
+                <button type="button" class="idioma" data-idioma="en" lang="en" aria-pressed="false"
+                    aria-label="English">EN</button>
+            </div>
 
-                <li>
-                    <a href="#habilidades" class="link-navegacao">Habilidades</a>
-                </li>
+            <button type="button" class="botao-menu" aria-controls="menu-navegacao" aria-expanded="false"
+                aria-label="Menu" data-i18n-attr="aria-label:nav.menu">
+                <span></span><span></span><span></span>
+            </button>
 
-                <li>
-                    <a href="#secao-projetos" class="link-navegacao">Projetos</a>
-                </li>
-
-                <li>
-                    <a href="#contato" class="link-navegacao">Contato</a>
-                </li>
-
-                <li>
-                    <div class="seletor-idioma">
-                        <button class="idioma ativo" data-idioma="pt">PT</button>
-                        <button class="idioma" data-idioma="en">EN</button>
-                    </div>
-                </li>
-
-            </ul>
-        </nav>
+        </div>
 
     </header>
 
 
-    <main>
+    <main id="conteudo">
 
         <!-- HOME -->
-        <section id="home" class="secao-home" aria-label="Apresentação">
+        <section id="home" class="secao-home" aria-label="Apresentação" data-i18n-attr="aria-label:home.aria">
 
             <!-- Elementos decorativos -->
             <div class="bola-decorativa bola-topo-centro" aria-hidden="true"></div>
@@ -74,33 +78,33 @@
 
                 <div class="home-foto">
                     <img class="imagem-home" src="assets/minhas_fotos/ana_cristina_1.png"
-                        alt="Foto de perfil de Ana Cristina Brito">
+                        alt="Foto de perfil de Ana Cristina Brito" data-i18n-attr="alt:home.photoAlt">
                 </div>
 
 
                 <div class="home-texto">
 
-                    <p class="home-subtitulo">
+                    <p class="home-subtitulo" data-i18n="home.hello">
                         OLÁ, SOU A ANA.
                     </p>
 
-                    <h1 class="home-titulo">
+                    <h1 class="home-titulo" data-i18n-html="home.title">
                         Estudante de Sistemas
                         <br>
                         para Internet
                     </h1>
 
-                    <a href="#secao-projetos" class="botao-inicio">
+                    <a href="#secao-projetos" class="botao-inicio" data-i18n="home.cta">
                         Ver Projetos &rarr;
                     </a>
 
-                    <p class="home-descricao">
+                    <p class="home-descricao" data-i18n="home.desc">
                         Construindo experiências web modernas enquanto aprendo e evoluo constantemente no universo da
                         tecnologia.
                     </p>
 
 
-                    <nav class="redes-sociais-nav" aria-label="Redes sociais">
+                    <nav class="redes-sociais-nav" aria-label="Redes sociais" data-i18n-attr="aria-label:home.social">
 
                         <ul class="redes-sociais">
 
@@ -132,7 +136,7 @@
 
                             <li>
                                 <a href="http://lattes.cnpq.br/6312829985656811" target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" data-i18n="home.lattes">
                                     Currículo Lattes
                                 </a>
                             </li>
@@ -153,11 +157,11 @@
 
             <div class="sobre-texto">
 
-                <h2 id="titulo-sobre" class="titulo-secao">
+                <h2 id="titulo-sobre" class="titulo-secao" data-i18n="about.title">
                     Sobre Mim
                 </h2>
 
-                <p class="texto-secao">
+                <p class="texto-secao" data-i18n-html="about.p1">
                     Sou Ana Cristina Brito de Miranda, estudante de
                     <strong class="texto-destaque">
                         Sistemas para Internet
@@ -168,7 +172,7 @@
                     áreas para descobrir minha especialização.
                 </p>
 
-                <p class="texto-secao">
+                <p class="texto-secao" data-i18n="about.p2">
                     Além da tecnologia, atuo como professora de inglês, experiência que
                     fortaleceu habilidades como comunicação, organização e pensamento
                     analítico, competências que levo para todos os meus projetos.
@@ -179,7 +183,7 @@
 
             <div class="sobre-imagem">
 
-                <img class="imagem-sobre" src="assets/minhas_fotos/ana_cristina_2.png" alt="Foto de Ana Cristina Brito">
+                <img class="imagem-sobre" src="assets/minhas_fotos/ana_cristina_2.png" alt="Foto de Ana Cristina Brito" data-i18n-attr="alt:about.photoAlt">
 
                 <h3 class="nome-sobre">
                     Ana Cristina Brito
@@ -193,7 +197,7 @@
         <!-- HABILIDADES -->
         <section id="habilidades" class="secao habilidades" aria-labelledby="titulo-habilidades">
 
-            <h2 id="titulo-habilidades" class="titulo-secao">
+            <h2 id="titulo-habilidades" class="titulo-secao" data-i18n="skills.title">
                 Habilidades
             </h2>
 
@@ -202,90 +206,90 @@
 
                 <!-- HTML -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/html5.svg" alt="HTML5" class="card-image">
+                    <img src="assets/icons/html5.svg" alt="HTML5" class="card-image" loading="lazy">
                     <p class="card-title">HTML</p>
                 </li>
 
 
                 <!-- CSS -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/css3.svg" alt="CSS3" class="card-image">
+                    <img src="assets/icons/css3.svg" alt="CSS3" class="card-image" loading="lazy">
                     <p class="card-title">CSS</p>
                 </li>
 
 
                 <!-- JavaScript -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/javascript.svg" alt="JavaScript" class="card-image">
+                    <img src="assets/icons/javascript.svg" alt="JavaScript" class="card-image" loading="lazy">
                     <p class="card-title">JavaScript</p>
                 </li>
 
 
                 <!-- Python -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/python.svg" alt="Python" class="card-image">
+                    <img src="assets/icons/python.svg" alt="Python" class="card-image" loading="lazy">
                     <p class="card-title">Python</p>
                 </li>
 
 
                 <!-- C++ -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/cplusplus.svg" alt="C++" class="card-image">
+                    <img src="assets/icons/cplusplus.svg" alt="C++" class="card-image" loading="lazy">
                     <p class="card-title">C++</p>
                 </li>
 
 
                 <!-- SQL -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/sql.svg" alt="SQL" class="card-image">
+                    <img src="assets/icons/sql.svg" alt="SQL" class="card-image" loading="lazy">
                     <p class="card-title">SQL</p>
                 </li>
 
 
                 <!-- Node.js -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/nodejs.svg" alt="Node.js" class="card-image">
+                    <img src="assets/icons/nodejs.svg" alt="Node.js" class="card-image" loading="lazy">
                     <p class="card-title">Node.js</p>
                 </li>
 
 
                 <!-- Streamlit -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/streamlit.svg" alt="Streamlit" class="card-image">
+                    <img src="assets/icons/streamlit.svg" alt="Streamlit" class="card-image" loading="lazy">
                     <p class="card-title">Streamlit</p>
                 </li>
 
 
                 <!-- Bootstrap -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/bootstrap.svg" alt="Bootstrap" class="card-image">
+                    <img src="assets/icons/bootstrap.svg" alt="Bootstrap" class="card-image" loading="lazy">
                     <p class="card-title">Bootstrap</p>
                 </li>
 
 
                 <!-- Git -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/git.svg" alt="Git" class="card-image">
+                    <img src="assets/icons/git.svg" alt="Git" class="card-image" loading="lazy">
                     <p class="card-title">Git</p>
                 </li>
 
 
                 <!-- GitHub -->
                 <li class="card-habilidades">
-                    <img src="assets/icons/github.svg" alt="GitHub" class="card-image">
+                    <img src="assets/icons/github.svg" alt="GitHub" class="card-image" loading="lazy">
                     <p class="card-title">GitHub</p>
                 </li>
 
                 <!-- Em breve -->
                 <li class="card-habilidades card-embreve">
-                    <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" class="card-image">
-                    <p class="card-title">Em Breve...</p>
+                    <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" data-i18n-attr="alt:skills.soonAlt" class="card-image" loading="lazy">
+                    <p class="card-title" data-i18n="skills.soon">Em Breve...</p>
                 </li>
 
 
                 <li class="card-habilidades card-embreve">
-                    <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" class="card-image">
-                    <p class="card-title">Em Breve...</p>
+                    <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" data-i18n-attr="alt:skills.soonAlt" class="card-image" loading="lazy">
+                    <p class="card-title" data-i18n="skills.soon">Em Breve...</p>
                 </li>
 
             </ul>
@@ -296,7 +300,7 @@
         <!-- PROJETOS -->
         <section id="secao-projetos" class="secao projetos" aria-labelledby="titulo-projetos">
 
-            <h2 id="titulo-projetos" class="titulo-secao">
+            <h2 id="titulo-projetos" class="titulo-secao" data-i18n="projects.title">
                 Projetos
             </h2>
 
@@ -307,20 +311,20 @@
                 <li>
                     <article class="card-projeto">
 
-                        <img src="assets/prints_projetos/print_velodash.png" alt="Prévia do VeloDash"
-                            class="imagem-projeto">
+                        <img src="assets/prints_projetos/print_velodash.png" alt="Prévia do VeloDash" data-i18n-attr="alt:projects.velodash.alt"
+                            class="imagem-projeto" loading="lazy" decoding="async">
 
                         <h3 class="nome-projeto">
                             VeloDash
                         </h3>
 
-                        <p class="descricao-projeto">
+                        <p class="descricao-projeto" data-i18n="projects.velodash.desc">
                             Dashboard analítico interativo para análise de métricas
                             operacionais e financeiras em tempo real.
                         </p>
 
 
-                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto">
+                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto" data-i18n-attr="aria-label:projects.stack">
 
                             <li>
                                 <img src="assets/icons/python.svg" alt="Python" title="Python">
@@ -333,10 +337,10 @@
                         </ul>
 
 
-                        <nav class="links-projeto" aria-label="Links do projeto VeloDash">
+                        <nav class="links-projeto" aria-label="Links do projeto VeloDash" data-i18n-attr="aria-label:projects.links">
 
                             <a href="https://velodash-dashboard.streamlit.app/" target="_blank"
-                                rel="noopener noreferrer" class="btn-projeto">
+                                rel="noopener noreferrer" class="btn-projeto" data-i18n="projects.live">
                                 Ver Deploy
                             </a>
 
@@ -355,21 +359,21 @@
                 <li>
                     <article class="card-projeto">
 
-                        <img src="assets/prints_projetos/print_blackjack.png" alt="Prévia do BlackJack"
-                            class="imagem-projeto">
+                        <img src="assets/prints_projetos/print_blackjack.png" alt="Prévia do BlackJack" data-i18n-attr="alt:projects.blackjack.alt"
+                            class="imagem-projeto" loading="lazy" decoding="async">
 
                         <h3 class="nome-projeto">
                             BlackJack
                         </h3>
 
-                        <p class="descricao-projeto">
+                        <p class="descricao-projeto" data-i18n="projects.blackjack.desc">
                             O clássico jogo de cartas "21" desenvolvido no navegador,
                             aplicando lógica de programação para manipulação de baralho
                             e condições de vitória.
                         </p>
 
 
-                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto">
+                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto" data-i18n-attr="aria-label:projects.stack">
 
                             <li>
                                 <img src="assets/icons/html5.svg" alt="HTML">
@@ -386,10 +390,10 @@
                         </ul>
 
 
-                        <nav class="links-projeto" aria-label="Links do projeto BlackJack">
+                        <nav class="links-projeto" aria-label="Links do projeto BlackJack" data-i18n-attr="aria-label:projects.links">
 
                             <a href="https://anacrisbrito.github.io/Blackjack/" target="_blank"
-                                rel="noopener noreferrer" class="btn-projeto">
+                                rel="noopener noreferrer" class="btn-projeto" data-i18n="projects.live">
                                 Ver Deploy
                             </a>
 
@@ -408,20 +412,20 @@
                 <li>
                     <article class="card-projeto">
 
-                        <img src="assets/prints_projetos/print_imc.png" alt="Prévia da Calculadora de IMC"
-                            class="imagem-projeto">
+                        <img src="assets/prints_projetos/print_imc.png" alt="Prévia da Calculadora de IMC" data-i18n-attr="alt:projects.imc.alt"
+                            class="imagem-projeto" loading="lazy" decoding="async">
 
-                        <h3 class="nome-projeto">
+                        <h3 class="nome-projeto" data-i18n="projects.imc.name">
                             Calculadora de IMC
                         </h3>
 
-                        <p class="descricao-projeto">
+                        <p class="descricao-projeto" data-i18n="projects.imc.desc">
                             Aplicação interativa que calcula o índice de Massa Corporal
                             do usuário em tempo real, processando dados e retornando
                             um feedback visual instantâneo.
                         </p>
 
-                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto">
+                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto" data-i18n-attr="aria-label:projects.stack">
 
                             <li>
                                 <img src="assets/icons/html5.svg" alt="HTML">
@@ -438,10 +442,10 @@
                         </ul>
 
 
-                        <nav class="links-projeto" aria-label="Links do projeto Calculadora de IMC">
+                        <nav class="links-projeto" aria-label="Links do projeto Calculadora de IMC" data-i18n-attr="aria-label:projects.links">
 
                             <a href="https://anacrisbrito.github.io/Calculadora-de-IMC-com-HTML-CSS-e-JavaScript/"
-                                target="_blank" rel="noopener noreferrer" class="btn-projeto">
+                                target="_blank" rel="noopener noreferrer" class="btn-projeto" data-i18n="projects.live">
                                 Ver Deploy
                             </a>
 
@@ -460,21 +464,21 @@
                 <li>
                     <article class="card-projeto">
 
-                        <img src="assets/prints_projetos/print_relogio.png" alt="Prévia do Relógio com JavaScript"
-                            class="imagem-projeto">
+                        <img src="assets/prints_projetos/print_relogio.png" alt="Prévia do Relógio com JavaScript" data-i18n-attr="alt:projects.clock.alt"
+                            class="imagem-projeto" loading="lazy" decoding="async">
 
-                        <h3 class="nome-projeto">
+                        <h3 class="nome-projeto" data-i18n="projects.clock.name">
                             Relógio com JS
                         </h3>
 
-                        <p class="descricao-projeto">
+                        <p class="descricao-projeto" data-i18n="projects.clock.desc">
                             Um relógio moderno e dinâmico que manipula o tempo em tempo
                             real, utilizando funções assíncronas do JavaScript para
                             atualizar a interface a cada segundo.
                         </p>
 
 
-                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto">
+                        <ul class="tags-projeto" aria-label="Tecnologias utilizadas no projeto" data-i18n-attr="aria-label:projects.stack">
 
                             <li>
                                 <img src="assets/icons/html5.svg" alt="HTML">
@@ -491,10 +495,10 @@
                         </ul>
 
 
-                        <nav class="links-projeto" aria-label="Links do projeto Relógio">
+                        <nav class="links-projeto" aria-label="Links do projeto Relógio" data-i18n-attr="aria-label:projects.links">
 
                             <a href="https://anacrisbrito.github.io/Relogio-com-JS/" target="_blank"
-                                rel="noopener noreferrer" class="btn-projeto">
+                                rel="noopener noreferrer" class="btn-projeto" data-i18n="projects.live">
                                 Ver Deploy
                             </a>
 
@@ -513,10 +517,10 @@
                 <li>
                     <article class="card-projeto card-em-desenvolvimento">
 
-                        <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" class="card-image">
+                        <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" data-i18n-attr="alt:skills.soonAlt" class="card-image" loading="lazy">
 
 
-                        <p class="descricao-projeto">
+                        <p class="descricao-projeto" data-i18n="projects.wip">
                             Projeto em desenvolvimento.
                         </p>
 
@@ -528,9 +532,9 @@
                 <li>
                     <article class="card-projeto card-em-desenvolvimento">
 
-                        <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" class="card-image">
+                        <img src="assets/icons/cadeado.png" alt="Tecnologia em breve" data-i18n-attr="alt:skills.soonAlt" class="card-image" loading="lazy">
 
-                        <p class="descricao-projeto">
+                        <p class="descricao-projeto" data-i18n="projects.wip">
                             Projeto em desenvolvimento.
                         </p>
 
@@ -544,15 +548,15 @@
         <!-- CONTATO -->
         <section id="contato" class="secao-contato">
 
-            <h2 class="titulo-contato">Contato</h2>
+            <h2 class="titulo-contato" data-i18n="contact.title">Contato</h2>
 
             <div class="container-contato">
 
                 <div class="informacoes-contato">
 
-                    <h3>Vamos criar algo incrível juntos?</h3>
+                    <h3 data-i18n="contact.heading">Vamos criar algo incrível juntos?</h3>
 
-                    <p>
+                    <p data-i18n="contact.text">
                         Estou aberta a novas oportunidades, colaborações e desafios interessantes.
                     </p>
 
@@ -573,16 +577,15 @@
                                     d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 17.1C9.7 16.2 7 12 7 9a5 5 0 1 1 10 0c0 3-2.7 7.2-5 10.1ZM12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
                             </svg>
 
-                            <span>Goiás, Brasil</span>
+                            <span data-i18n="contact.location">Goiás, Brasil</span>
                         </div>
 
                     </div>
                     
                     <a href="https://github.com/AnaCrisBrito" class="botao-github" target="_blank"
-                        rel="noopener noreferrer" aria-label="Visitar meu perfil no GitHub">
-                        <i class="bi bi-github" aria-hidden="true"></i>
-                        <span>Ver meu GitHub</span>
-                        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                        rel="noopener noreferrer">
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        <span data-i18n="contact.github">Ver meu GitHub</span>
                     </a>
 
                 </div>
@@ -590,14 +593,14 @@
 
                 <form class="formulario-contato" method="post" id="formulario_de_contato">
 
-                    <input id="name" type="text" name="name" placeholder="Nome" aria-label="Nome" required>
+                    <input id="name" type="text" name="name" autocomplete="name" placeholder="Nome" aria-label="Nome" data-i18n-attr="placeholder:form.name;aria-label:form.name" required>
 
-                    <input id="email" type="email" name="email" placeholder="E-mail" aria-label="E-mail" required>
+                    <input id="email" type="email" name="email" autocomplete="email" placeholder="E-mail" aria-label="E-mail" data-i18n-attr="placeholder:form.email;aria-label:form.email" required>
 
-                    <textarea id="mensagem" name="message" placeholder="Mensagem" aria-label="Mensagem"
+                    <textarea id="mensagem" name="message" placeholder="Mensagem" aria-label="Mensagem" data-i18n-attr="placeholder:form.message;aria-label:form.message"
                         required></textarea>
 
-                    <button type="submit" id="botao">
+                    <button type="submit" id="botao" data-i18n="form.send">
                         Enviar
                     </button>
 
@@ -611,16 +614,17 @@
 
 
         <!-- RODAPÉ -->
-        <footer class="rodape">
+    </main>
 
-            <p>
+    <footer class="rodape">
+
+            <p data-i18n="footer">
                 © 2026 Ana Cristina Brito de Miranda. Todos os direitos reservados.
             </p>
 
         </footer>
-    </main>
 
-    <script src="script.js"></script>
+
 </body>
 
 </html>
